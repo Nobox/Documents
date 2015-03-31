@@ -47,6 +47,20 @@
 
 * We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS.
 
+## Performance
+
+* Images are evil. Understand why they are the number 1 reason websites are slow and bloated. A front-end developer should always have a bias towards doing presentational things with CSS if at all possible, only resorting to images if there is no other choice.
+
+* Learn about page rendering, how images, stylesheets and scripts block it and what is the optimal place to include these files in an HTML document.
+
+* Learn about CSS and JavaScript minification and compression on the server for production. We have this process automated.
+
+* Learn the basic ways of optimizing images, starting with compression levels on Photoshop, optimization software like `optipng`, etc.
+
+* Learn how to do the [CSS image sprite technique](https://css-tricks.com/css-sprites/).
+
+* Understand how [browser caches](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching) work and how they improve page performance.
+
 
 ## Laravel
 
