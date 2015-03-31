@@ -1,4 +1,6 @@
-# HTML
+# Nobox Development 
+
+## HTML
 
 * Semantic HTML - Learn the concept of semantics and the semantic meaning of most HTML tags. Learn the main structure tags, `header`, `main`, `footer`, `section`, `aside`, etc. We write our HTML in the most semantic way possible.
 
@@ -7,7 +9,7 @@
 * Learn about the new HTML5 video element, the major supported video codecs on browsers and how to manipulate the video element with CSS.
 
 
-# SVG
+## SVG
 
 * Learn what [SVGs](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction) are and their advantages over bitmaps.
 
@@ -16,7 +18,7 @@
 * See how SVG elements can be modified with CSS.
 
 
-# CSS/Sass
+## CSS/Sass
 
 * Understand the CSS box-model. Learn how the browser calculates dimensions by default with the default `content-box` box-model, and its difference with the `border-box` box model. All of our sites use the `border-box` box model so dimensions are calculated differently than normal. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model), [CSS Tricks](https://css-tricks.com/the-css-box-model/)
 
@@ -60,4 +62,22 @@
 * All of our projects have their own Git repo hosted on Github. We use a branch workflow with a `master` branch that has the production server code, and a `dev` branch that has the development server code. We push our code to the dev branch and solve any conflicts, and when it's ready to go live it's merged into the master branch and pushed. We also create additional branches as needed if major sets of features are being worked on for an app independently of the current app state.
 
 * We currently use Digital Ocean droplets to host our sites and apps, managed through the [Laravel Forge](https://forge.laravel.com/) service. Forge has deployment hooks for repository branches that automatically run a deployment script on the server when code is pushed to the corresponding branch. For example, a project with the domain `dev.project.com` that is tracking the `dev` branch of a repo will automatically pull and run a deployment script whenever code is pushed to the Github remote branch. This is handy for our rapid development requirements.
+
+
+## Culture
+
+Our team is its own little world inside the agency, and our main focus is enjoying what we do to the maximum of our ability and keep learning our craft. It would be the greatest sin to turn complacent and think we know everything. This is an ever changing profession and to be the best we need to keep learning and improving.
+
+### How you will feel with us
+
+![](https://i.imgur.com/txNPc.gif)
+
+### How we will treat you
+
+![](https://i.imgur.com/4p9xz.gif)
+
+
+
+
+
 
