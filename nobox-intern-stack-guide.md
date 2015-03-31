@@ -45,7 +45,6 @@
 
 * We're also using [ES6](https://babeljs.io/docs/learn-es6/) features like classes, template strings, and compiling our scripts with [Babel](https://babeljs.io/) to ES5.
 
-* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS.
 
 ## Performance
 
@@ -72,6 +71,8 @@
 * We used Grunt once but moved to using the [Gulp]() task runner. We had written some custom Gulp tasks but now use Laravel 5's [Elixir](http://laravel.com/docs/5.0/elixir) gulp utility. A basic understanding of what is happening in our template app's `gulpfile.js` is recommended.
 
 * We use [Bower](http://bower.io/) to easily install front-end dependencies that are not on npm.
+
+* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS.
 
 * All of our projects have their own Git repo hosted on Github. We use a branch workflow with a `master` branch that has the production server code, and a `dev` branch that has the development server code. We push our code to the dev branch and solve any conflicts, and when it's ready to go live it's merged into the master branch and pushed. We also create additional branches as needed if major sets of features are being worked on for an app independently of the current app state.
 
