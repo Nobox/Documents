@@ -45,7 +45,7 @@
 
 * We're also using [ES6](https://babeljs.io/docs/learn-es6/) features like classes, template strings, and compiling our scripts with [Babel](https://babeljs.io/) to ES5.
 
-* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim]() transform for compatibility of modules that are not CommonJS.
+* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS.
 
 
 ## Laravel
