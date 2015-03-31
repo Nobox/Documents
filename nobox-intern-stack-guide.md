@@ -37,7 +37,7 @@
     * [The specificity graph](http://csswizardry.com/2014/10/the-specificity-graph/)
     
 
-# JavaScript
+## JavaScript
 
 * We are moving towards using vanilla JavaScript for most of our projects unless heavy DOM manipulation is required. This means we are moving away from jQuery. We're doing this because we believe JavaScript is the future and we want to understand it better, even if it's more tedious and will produce more lines of code. [You don't need jQuery](http://blog.garstasio.com/you-dont-need-jquery/), [You might not need jQuery](http://youmightnotneedjquery.com/)
 
@@ -46,12 +46,12 @@
 * We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim]() transform for compatibility of modules that are not CommonJS.
 
 
-# Laravel
+## Laravel
 
 * We use the [Laravel](http://laravel.com/) PHP framework for most of our projects. We have a [custom starter app template](https://github.com/Nobox/laravel) that is the starting point for every project. For front-end development purposes, learn Laravel's [Blade templates](http://laravel.com/docs/5.0/templates), how to create a [route](http://laravel.com/docs/5.0/routing), a [controller](http://laravel.com/docs/5.0/controllers) method that is called through that route, and how to render a [view](http://laravel.com/docs/5.0/views#basic-usage) through a controller method.
 
 
-# Tools
+## Tools
 
 * We used Grunt once but moved to using the [Gulp]() task runner. We had written some custom Gulp tasks but now use Laravel 5's [Elixir](http://laravel.com/docs/5.0/elixir) gulp utility. A basic understanding of what is happening in our template app's `gulpfile.js` is recommended.
 
