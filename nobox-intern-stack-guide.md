@@ -8,6 +8,8 @@
 
 * Learn about the new HTML5 video element, the major supported video codecs on browsers and how to manipulate the video element with CSS.
 
+* What are data attributes? We use them quite often to store miscellaneous data that can't be displayed to the user but is used on JavaScript.
+
 
 ## SVG
 
@@ -23,6 +25,8 @@
 * Understand the CSS box-model. Learn how the browser calculates dimensions by default with the default `content-box` box-model, and its difference with the `border-box` box model. All of our sites use the `border-box` box model so dimensions are calculated differently than normal. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model), [CSS Tricks](https://css-tricks.com/the-css-box-model/)
 
 * Pseudo-elements, `::after` and `::before`. They are sprinkled throughout all of our projects, sometimes for really major visual elements.  Learn how to use them to minimize unsemantic markup for presentational purposes.
+
+* Vendor prefixes. We automate the prefixing process with [Autoprefixer](https://github.com/postcss/autoprefixer), but this is basic knowledge for front-end CSS development. You should know their purposes
 
 * The BEM class syntax. All of our CSS is written with BEM classes and looks fugly at first sight, so it's important you understand what's going on. [CSSWizardry](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
@@ -43,7 +47,9 @@
 
 * We are moving towards using vanilla JavaScript for most of our projects unless heavy DOM manipulation is required. This means we are moving away from jQuery. We're doing this because we believe JavaScript is the future and we want to understand it better, even if it's more tedious and will produce more lines of code. [You don't need jQuery](http://blog.garstasio.com/you-dont-need-jquery/), [You might not need jQuery](http://youmightnotneedjquery.com/)
 
-* We're also using [ES6](https://babeljs.io/docs/learn-es6/) features like classes, template strings, and compiling our scripts with [Babel](https://babeljs.io/) to ES5.
+* We're also using [ES6](https://babeljs.io/docs/learn-es6/) features like classes, modules, template strings, and compiling our scripts through [Babel](https://babeljs.io/) to ES5.
+
+* We often work with AJAX requests, using `jQuery.ajax` and now using soon-to-be native `window.fetch`. See the [polyfill](https://github.com/github/fetch). 
 
 
 ## Performance
