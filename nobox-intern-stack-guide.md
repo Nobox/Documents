@@ -17,18 +17,20 @@
 
 * We use the [SVG symbols](https://css-tricks.com/svg-symbol-good-choice-icons/) spritesheet technique to hold all our SVGs. Learn more: [Icon system](https://css-tricks.com/svg-sprites-use-better-icon-fonts/), [External SVG file](https://css-tricks.com/svg-use-external-source/), and our [Elixir extension](https://github.com/waldemarfm/laravel-elixir-svg-symbols).
 
-* See how SVG elements can be modified with CSS.
+* Research how SVG images can be modified with CSS with fills, strokes, etc.
 
 
 ## CSS/Sass
+
+* Understand the [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) part of CSS (Cascading Style Sheets). Read up on CSS specificity and how the browser chooses what CSS to apply when there are multiple rules in different classes.
 
 * Understand the CSS box-model. Learn how the browser calculates dimensions by default with the default `content-box` box-model, and its difference with the `border-box` box model. All of our sites use the `border-box` box model so dimensions are calculated differently than normal. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model), [CSS Tricks](https://css-tricks.com/the-css-box-model/)
 
 * Pseudo-elements, `::after` and `::before`. They are sprinkled throughout all of our projects, sometimes for really major visual elements.  Learn how to use them to minimize unsemantic markup for presentational purposes.
 
-* Vendor prefixes. We automate the prefixing process with [Autoprefixer](https://github.com/postcss/autoprefixer), but this is basic knowledge for front-end CSS development. You should know their purposes
+* Vendor prefixes. We automate the prefixing process with [Autoprefixer](https://github.com/postcss/autoprefixer), but this is basic knowledge for front-end CSS development. You should know their purpose and why automating the process is ideal.
 
-* The BEM class syntax. All of our CSS is written with BEM classes and looks fugly at first sight, so it's important you understand what's going on. [CSSWizardry](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+* The BEM class syntax. Most of our CSS is written with BEM classes and looks fugly at first sight, so it's important you understand what's going on. [CSSWizardry](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 * Learn the basics of the Sass preprocessor, and what are mixins, functions and map lists.
 
@@ -36,7 +38,7 @@
 
 * The structure, import order and names of all stylesheet files is based on the [ITCSS](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf) architecture. [Inuitcss readme](https://github.com/inuitcss/getting-started#import-order)
 
-* We adhere strictly to this master document of [CSS Guidelines](http://cssguidelin.es/)
+* We adhere strictly to these master documents of [CSS](http://cssguidelin.es/) and [SASS](https://sass-guidelin.es/) guidelines.
 
 * More important stuff
     * [When to use @extend; when to use a mixin](http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/)
@@ -60,12 +62,11 @@
 
 * Learn about CSS and JavaScript minification and compression on the server for production. We have this process automated.
 
-* Learn the basic ways of optimizing images, starting with compression levels on Photoshop, optimization software like `optipng`, etc.
-
-* Learn how to do the [CSS image sprite technique](https://css-tricks.com/css-sprites/).
+* Learn the basic ways of optimizing images, starting with compression levels on Photoshop, optimization software like `optipng`, `jpegtran`, etc.
 
 * Understand how [browser caches](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching) work and how they improve page performance.
 
+* Research about HTTP2, what it means for the web and what best practices that apply to HTTP no longer apply to this new protocol. Our new servers are all HTTP2 enabled, which affects how we optimize our front-end stack.
 
 ## Laravel
 
@@ -74,16 +75,15 @@
 
 ## Tools
 
-* We used Grunt once but moved to using the [Gulp]() task runner. We had written some custom Gulp tasks but now use Laravel 5's [Elixir](http://laravel.com/docs/5.0/elixir) gulp utility. A basic understanding of what is happening in our template app's `gulpfile.js` is recommended.
+* We used Grunt once but moved to using the [Gulp]() task runner. We had written some custom Gulp tasks but now use Laravel's [Elixir](http://laravel.com/docs/5.2/elixir) gulp utility. A basic understanding of what is happening in our template app's `gulpfile.js` is recommended.
 
 * We use [Bower](http://bower.io/) to easily install front-end dependencies that are not on npm.
 
-* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS.
+* We use [Browserify](http://browserify.org/) to easily use npm modules for the browser. We use the [browserify-shim](https://github.com/thlorenz/browserify-shim) transform for compatibility of modules that are not CommonJS. We are also moving to using [Webpacl](https://webpack.github.io/) but this is still in the research phase.
 
 * All of our projects have their own Git repo hosted on Github. We use a branch workflow with a `master` branch that has the production server code, and a `dev` branch that has the development server code. We push our code to the dev branch and solve any conflicts, and when it's ready to go live it's merged into the master branch and pushed. We also create additional branches as needed if major sets of features are being worked on for an app independently of the current app state.
 
 * We currently use Digital Ocean droplets to host our sites and apps, managed through the [Laravel Forge](https://forge.laravel.com/) service. Forge has deployment hooks for repository branches that automatically run a deployment script on the server when code is pushed to the corresponding branch. For example, a project with the domain `dev.project.com` that is tracking the `dev` branch of a repo will automatically pull and run a deployment script whenever code is pushed to the Github remote branch. This is handy for our rapid development requirements.
-
 
 ## Culture
 
